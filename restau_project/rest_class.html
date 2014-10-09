@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="cons.css" rel="stylesheet">
+</head>
+<body>
+
+<p id="demo"></p>
+
+<script type="text/javascript">
+
+var order = function ()
+{
+    this.name = prompt("Enter the name");
+    this.head_count = prompt("How many people are at the table");
+    this.food = prompt("Enter the meal");
+    this.cost = prompt("Enter the cost");
+
+    this.noOfOrder = prompt("Enter the no_of orders");
+
+    alert("please enter the Calculation button to do the final bill");
+}
+    var receipt1 = new order();
+    console.log(receipt1);
+
+var total = function () {
+    final_total = parseFloat(receipt1.cost * receipt1.noOfOrder).toFixed(3);
+    alert("your total is" + final_total);
+    alert("click the individual_pay button to get your pay");
+    return total;
+}
+
+        var individual_total = function () {
+            individual_total = parseFloat(final_total / receipt1.head_count).toFixed(3);
+            alert("everyone has to pay" + individual_total);
+            return individual_total;
+            alert("click the tip button for tip amount")
+        }
+
+        var tip = function () {
+            if (receipt1.noOfOrder < 3) {
+                alert("no tips..Thank you");
+            }
+
+            else if (receipt1.noOfOrder > 6) {
+                tip = parseFloat(final_total * .18).toFixed(3);
+                alert("you owe " + tip);
+                return tip;
+            }
+            else {
+                tip = parseFloat(final_total * .15).toFixed(3);
+                alert(" you owe " + tip);
+                return tip;
+            }
+
+        }
+
+
+
+</script>
+<form class="rest">
+    <div>
+    <input type ="button" value ="Order bill" onclick="order()"/>
+    <!--<input type ="button" value ="make new customer" onclick="make_new()"/>;-->
+    <input type="button" value="Calculate bill" onclick="total()"/>
+    <input type="button" value="individual_pay" onclick="individual_total()"/>
+    <input type="button" value="tip_amt" onclick="tip()"/>
+    <a href="rest_class.html"><input type="button" value="Start again"/></a>
+
+
+</div>
+</form>
+
+</body>
+</html>
