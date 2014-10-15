@@ -1,0 +1,120 @@
+
+
+/*div {*/
+    /*margin:10px;*/
+    /*border: 1px solid black;*/
+    /*padding: 10px;*/
+/*}*/
+fieldset {
+    margin:25px ;
+    height: 80px;
+    padding: 20px;
+}
+input {
+    padding: 20px;
+    border-radius:10px;
+    border-color:black;
+}
+
+/*table {*/
+     /*border-radius: 10px;*/
+     /*border-spacing: 1px;*/
+     /*border: 1px solid silver;*/
+     /*padding:10px;*/
+     /*margin:120px;*/
+/*}*/
+
+/*th{*/
+    /*border:1px solid gainsboro;*/
+    /*border-spacing:5px;*/
+    /*padding:10px ;*/
+/*}*/
+
+/*td{*/
+    /*padding:10px;*/
+    /*text-align:center;*/
+/*}*/
+.order{
+    border:solid 1px dimgray;
+    background-color:white ;
+}
+
+.order_color{
+    background-color:lightgray ;
+}
+
+a{
+    text-decoration:none;
+}
+a:hover{
+    background-color:ivory ;
+}
+
+.menu{
+    margin:100px;
+    padding:20px;
+}
+/*label{*/
+    /*padding:10px;*/
+    /*margin-top:30px;*/
+    /*text-align:center;*/
+    /*background-color:gainsboro ;*/
+
+
+/*}*/
+/*.hours{*/
+
+    /*display:inline;*/
+    /*padding:1px;*/
+/*}*/
+.fmeal,.lmeal {
+     border: 1px solid burlywood;
+     padding:10px ;
+
+}
+
+/*#fullmeal {*/
+     /*border-bottom: 1px solid black;*/
+     /*border-height:100%;*/
+/*}*/
+.fmeal tr td {
+    border-bottom: 1px solid black;
+}
+.lmeal tr td {
+    border-bottom: 1px solid black;
+}
+
+.fmeal thead th{
+    border-bottom:1px solid black;
+    text-align:center;
+    margin-left:10px ;
+
+
+}
+
+.lmeal thead th{
+    border-bottom:1px solid black;
+    text-align:center;
+    margin-left:10px ;
+
+}
+
+.fmeal tfoot td{
+    border-bottom:none;
+}
+.lmeal tfoot td{
+    border-bottom:none;
+}
+
+table thead th{
+    colspan:"6";
+}
+p span{
+margin-left:160px;
+}
+p a:hover{
+    background-color:gray ;
+}
+
+
+
